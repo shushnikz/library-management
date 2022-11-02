@@ -1,0 +1,43 @@
+:root{
+  --offcanvas-width: 230px;
+}
+.sidebar-nav{
+  width: var(--offcanvas-width);
+}
+@media(min-width:992px){
+  body{
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop::before{
+    display: none;
+  }
+  .sidebar-nav{
+    transform: none;
+    visibility: visible !important;
+  }
+}
+.topbar{
+  position: absolute;
+  transform: scale(.7);
+  transform-origin: top right;
+  right: .25rem;
+  margin-top: -.25rem;
+  width: 121%;
+  height: 6rem;
+  text-align: center;
+}
+.dashboard{
+  position: absolute;
+    top: 70px;
+    left: 300px;
+}
+.bookhome{
+  position: absolute;
+    top: 70px;
+    left: 500px;
+}
+.addbook{
+  position: absolute;
+  top: 70px;
+  left: 600px;
+}
